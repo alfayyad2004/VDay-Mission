@@ -1,0 +1,238 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Georgia', serif; /* Elegant font choice */
+  background-color: #fff0f5; /* Soft and light background */
+  color: #444;
+}
+
+/* Header Styles - Adjust the padding and font size for size control */
+header {
+  background-image: linear-gradient(to right, #ffccd5, #f78da7); /* Gradient for header */
+  color: #fff;
+  padding: 5px 0; /* Reduce padding to decrease banner size */
+  text-align: center;
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.5em; /* Adjust font size for banner content */
+}
+
+
+/* Hero Section Styles - Video is more clear, sweet font and shadow for text */
+.hero-section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 15px 10px;
+  overflow: hidden;
+  height: 70vh; /* Increased height for larger video area */
+}
+
+/* Removed the pink overlay to clear up video */
+.hero-section video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the full area */
+  z-index: 0;
+}
+
+.hero-section h2 {
+  font-family: 'Tangerine', cursive; /* Cursive font for the title */
+  color: #ffccd5; /* Soft pink color for the title */
+  text-shadow: 2px 2px 4px #ffffff; /* White shadow for better readability */
+  font-size: 3em; /* Larger size for main title */
+  position: relative; /* Above the video */
+  z-index: 1;
+}
+
+.hero-section p {
+  font-family: 'Georgia', serif;
+  color: #ffccd5; /* Soft pink color for the subtitle */;
+  text-shadow: 2px 2px 4px #ffffff;
+  
+  position: relative; /* Above the video */
+  z-index: 1;
+ 
+  font-size: 1.25em; /* Increased font size */
+  margin: 1em 0; /* Add some space around the paragraph */
+  max-width: 80%; /* Maximum width to maintain readability */
+  text-align: center; /* Center the text inside the paragraph */
+}
+
+
+/* Gallery Container and Items - Added sweet styling */
+.gallery-container {
+  padding: 20px;
+  text-align: center;
+  font-family: 'Georgia', serif;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Grid layout for responsiveness */
+  gap: 15px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Rounded corners for a softer look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+}
+
+/* Buttons - More rounded and sweet */
+.prev-button, .next-button {
+  background-color: #ffccd5;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 20px 5px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 30px; /* Fully rounded buttons */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Gallery Enhancements - Adding Shadows and Hover Effects */
+.gallery-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for hover effects */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+
+/* Responsive Adjustments */
+@media (min-width: 768px) {
+  .gallery-item {
+    flex: 1 1 calc(33.333% - 10px);
+  }
+
+  
+  .hero-section {
+    height: 50vh;
+  }
+
+  
+}
+
+
+
+ 
+  /* Main Content Styles */
+  main h2 {
+    font-family: 'Dancing Script', cursive; /* Stylish cursive font for headings */
+    color: #ff6d99; /* Soft pink color that stands out */
+    font-size: 2.5em; /* Larger font size for headings */
+    margin: 0.5em 0; /* Space above and below the heading */
+    text-align: center; /* Center the heading */
+  }
+
+  main p {
+    font-size: 1.25em; /* Slightly larger font size for body text */
+    margin-bottom: 1em; /* Space below paragraphs */
+    text-align: justify; /* Justified text for a polished look */
+    padding: 0 10%; /* Padding on the sides */
+  }
+
+  /* Styling for the Footer */
+  footer {
+    font-family: 'Georgia', serif;
+    color: #ff6d99; /* Color to match the headings */
+    text-align: center; /* Center the content */
+    padding: 1em 0; /* Padding for spacing */
+    font-size: 1em; /* Appropriate font size for footer */
+    background-color: #fdf1f4; /* Very light pink background for the footer */
+  }
+
+  #personal-message {
+    background: #fdf1f4;
+    color: #ff6d99;
+    padding: 2em;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 2em 0;
+    text-align: center;
+  }
+
+  #rose-garden {
+    text-align: center;
+    padding: 2em;
+    background-color: #fff0f5;
+  }
+
+  #garden {
+    margin-top: 2em;
+    position: relative;
+    width: 100%;
+    min-height: 400px;
+    background: url('garden-background.png') no-repeat center center; /* Replace with your garden background image */
+    background-size: cover;
+  }
+
+  .rose {
+    position: absolute;
+    width: 50px; /* Size of the rose image */
+    transition: transform 0.3s ease;
+  }
+
+  .rose:hover {
+    transform: scale(1.1); /* Slight animation on hover */
+  }
+  #plant-rose {
+    background-color: #f54291; /* A valentine-themed pink color */
+    color: white; /* White text color */
+    font-size: 18px; /* Larger font size for readability */
+    padding: 10px 20px; /* Top/bottom padding and left/right padding */
+    border: none; /* No border for a modern look */
+    border-radius: 25px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    cursor: pointer; /* Cursor changes to a hand icon when hovering over the button */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions for interactions */
+    outline: none; /* Removes the outline to keep the style clean */
+  }
+
+  #plant-rose:hover {
+    background-color: #ff65a3; /* Lighter pink on hover for feedback */
+    transform: translateY(-2px); /* Slight raise effect on hover */
+  }
+
+  #plant-rose:active {
+    background-color: #e83a7f; /* Darker pink to simulate a click */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Smaller shadow to simulate being pressed */
+    transform: translateY(1px); /* Moves the button down when clicked */
+  }
+
+  #plant-rose:focus {
+    border: 2px solid #ff65a3; /* Adds a border to give feedback when the button is focused */
+  }
+  /* Specific styles for the .gif container */
+
+
+
+  
